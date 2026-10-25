@@ -1,0 +1,24 @@
+body {
+background-color: #fbfedb;
+font-size: 21px;
+color:black;
+font-family:'Courier New', Courier, monospace;
+}
+h1 {
+    font: size 35px;
+    color:black;
+}
+h2 {
+    font-size: 35px;
+    color:black
+}
+h3 {
+    font-size: 35px;
+    color: black;
+}
+.first-paragraph {
+    background-color:#76ba83
+}
+.second-paragraph {
+    background-color:#76ba83
+}

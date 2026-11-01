@@ -1,14 +1,21 @@
 body {
+max-width:100%;
+margin:0;
+padding:0;
+overflow-x:hidden;
 background-color: #fbfedb;
 font-size: 21px;
 color:black;
 font-family:'Courier New', Courier, monospace;
 }
+* {
+    box-sizing: border-box;
+}
 .paragraph-1 {
   background-color:#76ba83;
-  width: 300px;
-  margin: 50px;
-  margin-left: 75px;
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto;
   border-width: 5px;
   border-color:black;
   border-style:solid;
@@ -18,21 +25,27 @@ font-family:'Courier New', Courier, monospace;
 }
 .header-1 {
     background-color:#76ba83;
-    width:500px;
+    width:100%;
+    max-width:500px;
     height:50px;
     text-align:center;
+    margin: 10px auto;
 }
 .header-2 {
     background-color:#76ba83;
-    width:500px;
+    width:100%;
+    max-width:500px;
     height:50px;
     text-align: center;
+    margin: 10px auto;
 }
 .header-3 {
     background-color:#76ba83;
-    width:500px;
+    width:100%;
+    max-width:500px;
     height:50px;
     text-align: center;
+    margin: 10px auto;
 }
 a:link {
     color:#76ba83;
@@ -47,11 +60,56 @@ a:active {
     color:#38b34e
 }
 #image {
-   width:500px;
-   height:282px;
-   margin:10px;
+   width:calc(100% - 20px); 
+   max-width: 500px;
+   height:auto;
+   margin: 10px auto;
    border-style: solid;
    border-color: black;
    border-width: 5px;
-   
+   display: block;
+}
+#image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+.nav-list li {
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: center;
+}
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+.hobbies li {
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
